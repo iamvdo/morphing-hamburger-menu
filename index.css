@@ -1,0 +1,59 @@
+html {
+  min-height: 100%;
+  background: linear-gradient(to bottom right, #fff, #ddd);
+  font: 1em catamaran, sans-serif;
+  text-align: center;
+  color: #333;
+}
+.info {
+  font-size: .85em;
+  color: #666;
+}
+.info a {
+  color: #e74c3c;
+}
+.parentPhone {
+  display: flex;
+  justify-content: center;
+}
+.phone {
+  position: relative;
+  width: 260px;
+  height: 528px;
+  min-width: 260px;
+  min-height: 400px;
+  margin: 0 0 15px 0;
+  background: linear-gradient(to bottom right, #333, #111);
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.9), 0 5px 5px rgba(0,0,0,.75), 0 10px 20px rgba(0,0,0,.25);
+  overflow: hidden;
+  resize: both;
+}
+.phone::after {
+  content: '';
+  position: absolute;
+  bottom: 10px; left: 0; right: 0;
+  margin: auto;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: #555;
+}
+.use,
+.resize {
+  flex: 0 1 auto;
+  width: 100px; height: 75px;
+}
+.use {
+}
+.resize {
+  align-self: flex-end;
+  background: url("images/resize-device.png") center / contain no-repeat;
+}
+.screen {
+  position: absolute;
+  top: 50px; left: 10px; right: 10px; bottom: 50px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
